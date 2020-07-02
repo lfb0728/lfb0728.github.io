@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Sass @-Rules | 眼圈发黑</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    
+    <meta name="description" content="分享学习笔记的个人博客">
+    <link rel="preload" href="/assets/css/0.styles.8fbd8908.css" as="style"><link rel="preload" href="/assets/js/app.66729703.js" as="script"><link rel="preload" href="/assets/js/2.751cbbdc.js" as="script"><link rel="preload" href="/assets/js/39.686f660f.js" as="script"><link rel="prefetch" href="/assets/js/10.5ef6b535.js"><link rel="prefetch" href="/assets/js/11.06b366a7.js"><link rel="prefetch" href="/assets/js/12.033941e8.js"><link rel="prefetch" href="/assets/js/13.7e3d5fc4.js"><link rel="prefetch" href="/assets/js/14.1d8d5c38.js"><link rel="prefetch" href="/assets/js/15.48ed59d4.js"><link rel="prefetch" href="/assets/js/16.f4a18cdc.js"><link rel="prefetch" href="/assets/js/17.9c042f92.js"><link rel="prefetch" href="/assets/js/18.12374071.js"><link rel="prefetch" href="/assets/js/19.36d25448.js"><link rel="prefetch" href="/assets/js/20.1d70349f.js"><link rel="prefetch" href="/assets/js/21.89175811.js"><link rel="prefetch" href="/assets/js/22.491bceba.js"><link rel="prefetch" href="/assets/js/23.7da121a7.js"><link rel="prefetch" href="/assets/js/24.39e54ebd.js"><link rel="prefetch" href="/assets/js/25.78212e68.js"><link rel="prefetch" href="/assets/js/26.4fe075a0.js"><link rel="prefetch" href="/assets/js/27.de488a7c.js"><link rel="prefetch" href="/assets/js/28.c0f198cf.js"><link rel="prefetch" href="/assets/js/29.d781ae97.js"><link rel="prefetch" href="/assets/js/3.ab58017d.js"><link rel="prefetch" href="/assets/js/30.41099b0a.js"><link rel="prefetch" href="/assets/js/31.a6e2d3d9.js"><link rel="prefetch" href="/assets/js/32.da604dce.js"><link rel="prefetch" href="/assets/js/33.ff76561f.js"><link rel="prefetch" href="/assets/js/34.947086dc.js"><link rel="prefetch" href="/assets/js/35.dd632927.js"><link rel="prefetch" href="/assets/js/36.ff97bfd4.js"><link rel="prefetch" href="/assets/js/37.d785f299.js"><link rel="prefetch" href="/assets/js/38.a539470c.js"><link rel="prefetch" href="/assets/js/4.aa54df16.js"><link rel="prefetch" href="/assets/js/40.a98543d3.js"><link rel="prefetch" href="/assets/js/41.c992fd48.js"><link rel="prefetch" href="/assets/js/42.a9dc1a1f.js"><link rel="prefetch" href="/assets/js/5.18505f39.js"><link rel="prefetch" href="/assets/js/6.ef74fa2a.js"><link rel="prefetch" href="/assets/js/7.3f2d4e21.js"><link rel="prefetch" href="/assets/js/8.f3f008ab.js"><link rel="prefetch" href="/assets/js/9.b0dba02d.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.8fbd8908.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">眼圈发黑</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="advanced" class="dropdown-title"><span class="title">学习笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/guide/Git/1.Git的安装到添加到本地仓库.html" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/blog/guide/Terminal/1.Win10 Terminal 命令使用.html" class="nav-link">
+  Terminal
+</a></li><li class="dropdown-item"><h4>
+          CSS预处理器
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/guide/css-pretreatment/1.Sass基本运用.html" class="nav-link">
+  Sass
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="advanced" class="dropdown-title"><span class="title">高级</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/design-pattern/1.设计模式与开发实践-多态.html" class="nav-link">
+  设计模式
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/lfb0728" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="https://juejin.im/user/5d560a03518825053e0431a0/posts" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  掘金
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="advanced" class="dropdown-title"><span class="title">学习笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/guide/Git/1.Git的安装到添加到本地仓库.html" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/blog/guide/Terminal/1.Win10 Terminal 命令使用.html" class="nav-link">
+  Terminal
+</a></li><li class="dropdown-item"><h4>
+          CSS预处理器
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/guide/css-pretreatment/1.Sass基本运用.html" class="nav-link">
+  Sass
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="advanced" class="dropdown-title"><span class="title">高级</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/design-pattern/1.设计模式与开发实践-多态.html" class="nav-link">
+  设计模式
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/lfb0728" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="https://juejin.im/user/5d560a03518825053e0431a0/posts" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  掘金
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/blog/guide/css-pretreatment/1.Sass基本运用.html" class="sidebar-link">Sass</a></li><li><a href="/blog/guide/css-pretreatment/2.Sass数据类型.html" class="sidebar-link">Sass 数据类型</a></li><li><a href="/blog/guide/css-pretreatment/3.Sass@-Rules.html" aria-current="page" class="active sidebar-link">Sass @-Rules</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/guide/css-pretreatment/3.Sass@-Rules.html#import（导入）" class="sidebar-link">@import（导入）</a></li><li class="sidebar-sub-header"><a href="/blog/guide/css-pretreatment/3.Sass@-Rules.html#media（媒体查询）" class="sidebar-link">@media（媒体查询）</a></li><li class="sidebar-sub-header"><a href="/blog/guide/css-pretreatment/3.Sass@-Rules.html#extend（继承）" class="sidebar-link">@extend（继承）</a></li><li class="sidebar-sub-header"><a href="/blog/guide/css-pretreatment/3.Sass@-Rules.html#at-root" class="sidebar-link">@at-root</a></li><li class="sidebar-sub-header"><a href="/blog/guide/css-pretreatment/3.Sass@-Rules.html#debug" class="sidebar-link">@debug</a></li><li class="sidebar-sub-header"><a href="/blog/guide/css-pretreatment/3.Sass@-Rules.html#warn" class="sidebar-link">@warn</a></li></ul></li><li><a href="/blog/guide/css-pretreatment/4.Sass控制指令.html" class="sidebar-link">Sass 控制指令</a></li><li><a href="/blog/guide/css-pretreatment/5.Sass混合指令和函数指令.html" class="sidebar-link">混合指令和函数指令</a></li><li><a href="/blog/guide/css-pretreatment/6.Sass输出格式.html" class="sidebar-link">Sass 输出格式</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="sass-rules"><a href="#sass-rules" class="header-anchor">#</a> Sass @-Rules</h1> <p>Sass 支持所有的 CSS3 @-Rules，以及 Sass 特有的 “指令”（directives）。</p> <h2 id="import（导入）"><a href="#import（导入）" class="header-anchor">#</a> @import（导入）</h2> <p>Sass 拓展了 <code>@import</code> 的功能，允许其导入 SCSS 或 Sass 文件。被导入的文件将合并编译到同一个 CSS 文件中，另外，被导入的文件中所包含的变量或者混合指令 (mixin) 都可以在导入的文件中使用。</p> <p>通常，<code>@import</code> 寻找 Sass 文件并将其导入，但在以下情况下，<code>@import</code> 仅作为普通的 CSS 语句，不会导入任何 Sass 文件。</p> <ul><li>文件拓展名是 <code>.css</code>；</li> <li>文件名以 <code>http://</code> 开头；</li> <li>文件名是 <code>url()</code>；</li> <li><code>@import</code> 包含 media queries。</li></ul> <p>如果不在上述情况内，文件的拓展名是 <code>.scss</code> 或 <code>.sass</code>，则导入成功。没有指定拓展名，Sass 将会试着寻找文件名相同，拓展名为 <code>.scss</code> 或 <code>.sass</code> 的文件并将其导入。</p> <p>Sass 允许同时导入多个文件，例如同时导入 rounded-corners 与 text-shadow 两个文件：</p> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token keyword">@import</span> <span class="token string">&quot;rounded-corners&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;text-shadow&quot;</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 以下划线开头的文件，sass规定不去编译这些文件，导入时可以省略下划线，如文件命名为_colors.scss</span>
+<span class="token keyword">@import</span> <span class="token string">&quot;colors&quot;</span>
+</code></pre></div><p>导入文件也可以使用 <code>#{ }</code> 插值语句，但不是通过变量动态导入 Sass 文件，只能作用于 CSS 的 <code>url()</code> 导入方式：</p> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token property"><span class="token variable">$family</span></span><span class="token punctuation">:</span> <span class="token function">unquote</span><span class="token punctuation">(</span><span class="token string">&quot;Droid+Sans&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">@import</span> <span class="token url">url</span><span class="token punctuation">(</span><span class="token string">&quot;http://fonts.googleapis.com/css?family=\#{$family}&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// 编译后</span>
+<span class="token keyword">@import</span> <span class="token url">url</span><span class="token punctuation">(</span><span class="token string">&quot;http://fonts.googleapis.com/css?family=Droid+Sans&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="嵌套-import"><a href="#嵌套-import" class="header-anchor">#</a> 嵌套 @import</h3> <p>大多数情况下，一般在文件的最外层（不在嵌套规则内）使用 <code>@import</code>，其实，也可以将 <code>@import</code> 嵌套进 CSS 样式或者 <code>@media</code> 中，与平时的用法效果相同，这样导入的样式只能出现在嵌套的层中。有点像块级作用域。</p> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token comment">// 假设 example.scss 文件包含以下样式：</span>
+<span class="token selector">.example </span><span class="token punctuation">{</span>
+  <span class="token property">color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// 然后导入到 #main 样式内</span>
+<span class="token selector">#main </span><span class="token punctuation">{</span>
+  <span class="token keyword">@import</span> <span class="token string">&quot;example&quot;</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// 编译后</span>
+<span class="token selector">#main .example </span><span class="token punctuation">{</span>
+  <span class="token property">color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>不可以在混合指令 (mixin) 或控制指令 (control directives) 中嵌套 <code>@import</code>。</p> <h2 id="media（媒体查询）"><a href="#media（媒体查询）" class="header-anchor">#</a> @media（媒体查询）</h2> <p>Sass 中 <code>@media</code> 指令与 CSS 中用法一样，只是增加了一点额外的功能：允许其在 CSS 规则中嵌套。如果 <code>@media</code> 嵌套在 CSS 规则内，编译时，<code>@media</code> 将被编译到文件的最外层，包含嵌套的父选择器。这个功能让 <code>@media</code> 用起来更方便，不需要重复使用选择器，也不会打乱 CSS 的书写流程。</p> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token selector">.sidebar </span><span class="token punctuation">{</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 300px<span class="token punctuation">;</span>
+  <span class="token atrule"><span class="token rule">@media</span> screen <span class="token operator">and</span> <span class="token punctuation">(</span><span class="token property">orientation</span><span class="token punctuation">:</span> landscape<span class="token punctuation">)</span></span> <span class="token punctuation">{</span>
+    <span class="token property">width</span><span class="token punctuation">:</span> 500px<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// 编译后</span>
+<span class="token selector">.sidebar </span><span class="token punctuation">{</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 300px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token atrule"><span class="token rule">@media</span> screen <span class="token operator">and</span> <span class="token punctuation">(</span><span class="token property">orientation</span><span class="token punctuation">:</span> landscape<span class="token punctuation">)</span></span> <span class="token punctuation">{</span>
+  <span class="token selector">.sidebar </span><span class="token punctuation">{</span>
+    <span class="token property">width</span><span class="token punctuation">:</span> 500px<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><code>@media</code> 可以使用 SassScript（比如变量，函数，以及运算符）代替条件的名称或者值：</p> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token property"><span class="token variable">$media</span></span><span class="token punctuation">:</span> screen<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$feature</span></span><span class="token punctuation">:</span> -webkit-min-device-pixel-ratio<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$value</span></span><span class="token punctuation">:</span> 1.5<span class="token punctuation">;</span>
+
+<span class="token atrule"><span class="token rule">@media</span> <span class="token variable">#{$media}</span> <span class="token operator">and</span> <span class="token punctuation">(</span><span class="token property"><span class="token variable">$feature</span></span><span class="token punctuation">:</span> <span class="token variable">$value</span><span class="token punctuation">)</span></span> <span class="token punctuation">{</span>
+  <span class="token selector">.sidebar </span><span class="token punctuation">{</span>
+    <span class="token property">width</span><span class="token punctuation">:</span> 500px<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// 编译后</span>
+<span class="token atrule"><span class="token rule">@media</span> screen <span class="token operator">and</span> <span class="token punctuation">(</span><span class="token property">-webkit-min-device-pixel-ratio</span><span class="token punctuation">:</span> 1.5<span class="token punctuation">)</span></span> <span class="token punctuation">{</span>
+  <span class="token selector">.sidebar </span><span class="token punctuation">{</span>
+    <span class="token property">width</span><span class="token punctuation">:</span> 500px<span class="token punctuation">;</span> 
+    <span class="token punctuation">}</span> 
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="extend（继承）"><a href="#extend（继承）" class="header-anchor">#</a> @extend（继承）</h2> <p>在设计网页的时候常常遇到这种情况：一个元素使用的样式与另一个元素完全相同，但又添加了额外的样式。通常会在 HTML 中给元素定义两个 class，一个通用样式，一个特殊样式。我们可以这么写：</p> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token selector">.error </span><span class="token punctuation">{</span>
+  <span class="token property">border</span><span class="token punctuation">:</span> 1px #f00<span class="token punctuation">;</span>
+  <span class="token property">background-color</span><span class="token punctuation">:</span> #fdd<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.error.intrusion </span><span class="token punctuation">{</span>
+  <span class="token property">background-image</span><span class="token punctuation">:</span> <span class="token url">url</span><span class="token punctuation">(</span><span class="token string">&quot;/image/hacked.png&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.seriousError </span><span class="token punctuation">{</span>
+  <span class="token keyword">@extend</span> .error<span class="token punctuation">;</span>
+  <span class="token property">border-width</span><span class="token punctuation">:</span> 3px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// 编译后</span>
+<span class="token selector">.error, .seriousError </span><span class="token punctuation">{</span>
+  <span class="token property">border</span><span class="token punctuation">:</span> 1px #f00<span class="token punctuation">;</span>
+  <span class="token property">background-color</span><span class="token punctuation">:</span> #fdd<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.error.intrusion, .intrusion.seriousError </span><span class="token punctuation">{</span>
+  <span class="token property">background-image</span><span class="token punctuation">:</span> <span class="token url">url</span><span class="token punctuation">(</span><span class="token string">&quot;/image/hacked.png&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.seriousError </span><span class="token punctuation">{</span>
+  <span class="token property">border-width</span><span class="token punctuation">:</span> 3px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="多重延伸"><a href="#多重延伸" class="header-anchor">#</a> 多重延伸</h3> <p>同一个选择器可以延伸给多个选择器，它所包含的属性将继承给所有被延伸的选择器：</p> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token selector">.error </span><span class="token punctuation">{</span>
+  <span class="token property">border</span><span class="token punctuation">:</span> 1px #f00<span class="token punctuation">;</span>
+  <span class="token property">background-color</span><span class="token punctuation">:</span> #fdd<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.attention </span><span class="token punctuation">{</span>
+  <span class="token property">font-size</span><span class="token punctuation">:</span> 3em<span class="token punctuation">;</span>
+  <span class="token property">background-color</span><span class="token punctuation">:</span> #ff0<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.seriousError </span><span class="token punctuation">{</span>
+  <span class="token keyword">@extend</span> .error<span class="token punctuation">;</span>
+  <span class="token keyword">@extend</span> .attention<span class="token punctuation">;</span>
+  <span class="token property">border-width</span><span class="token punctuation">:</span> 3px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 编译为</span>
+<span class="token selector">.error, .seriousError </span><span class="token punctuation">{</span>
+  <span class="token property">border</span><span class="token punctuation">:</span> 1px #f00<span class="token punctuation">;</span>
+  <span class="token property">background-color</span><span class="token punctuation">:</span> #fdd<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.attention, .seriousError </span><span class="token punctuation">{</span>
+  <span class="token property">font-size</span><span class="token punctuation">:</span> 3em<span class="token punctuation">;</span>
+  <span class="token property">background-color</span><span class="token punctuation">:</span> #ff0<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.seriousError </span><span class="token punctuation">{</span>
+  <span class="token property">border-width</span><span class="token punctuation">:</span> 3px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="继续延伸"><a href="#继续延伸" class="header-anchor">#</a> 继续延伸</h3> <p>当一个选择器延伸给第二个后，可以继续将第二个选择器延伸给第三个，例如：</p> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token selector">.error </span><span class="token punctuation">{</span>
+  <span class="token property">border</span><span class="token punctuation">:</span> 1px #f00<span class="token punctuation">;</span>
+  <span class="token property">background-color</span><span class="token punctuation">:</span> #fdd<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.seriousError </span><span class="token punctuation">{</span>
+  <span class="token keyword">@extend</span> .error<span class="token punctuation">;</span>
+  <span class="token property">border-width</span><span class="token punctuation">:</span> 3px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.criticalError </span><span class="token punctuation">{</span>
+  <span class="token keyword">@extend</span> .seriousError<span class="token punctuation">;</span>
+  <span class="token property">position</span><span class="token punctuation">:</span> fixed<span class="token punctuation">;</span>
+  <span class="token property">top</span><span class="token punctuation">:</span> 10%<span class="token punctuation">;</span>
+  <span class="token property">bottom</span><span class="token punctuation">:</span> 10%<span class="token punctuation">;</span>
+  <span class="token property">left</span><span class="token punctuation">:</span> 10%<span class="token punctuation">;</span>
+  <span class="token property">right</span><span class="token punctuation">:</span> 10%<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 编译为</span>
+<span class="token selector">.error, .seriousError, .criticalError </span><span class="token punctuation">{</span>
+  <span class="token property">border</span><span class="token punctuation">:</span> 1px #f00<span class="token punctuation">;</span>
+  <span class="token property">background-color</span><span class="token punctuation">:</span> #fdd<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.seriousError, .criticalError </span><span class="token punctuation">{</span>
+  <span class="token property">border-width</span><span class="token punctuation">:</span> 3px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.criticalError </span><span class="token punctuation">{</span>
+  <span class="token property">position</span><span class="token punctuation">:</span> fixed<span class="token punctuation">;</span>
+  <span class="token property">top</span><span class="token punctuation">:</span> 10%<span class="token punctuation">;</span>
+  <span class="token property">bottom</span><span class="token punctuation">:</span> 10%<span class="token punctuation">;</span>
+  <span class="token property">left</span><span class="token punctuation">:</span> 10%<span class="token punctuation">;</span>
+  <span class="token property">right</span><span class="token punctuation">:</span> 10%<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="extend-only-选择器（占位符-）"><a href="#extend-only-选择器（占位符-）" class="header-anchor">#</a> @extend-Only 选择器（占位符 %）</h3> <p>有时，需要定义一套样式并不是给某个元素用，而是只通过 <code>@extend</code> 指令使用，尤其是在制作 Sass 样式库的时候，希望 Sass 能够忽略用不到的样式。</p> <p>如果使用普通的 CSS 规则，最后会编译出很多用不到的样式，也容易与其他样式名冲突，所以，Sass 引入了“占位符选择器” (placeholder selectors)，看起来很像普通的 <code>id</code> 或 <code>class</code> 选择器，只是 <code>#</code> 或 <code>.</code> 被替换成了 <code>%</code>。可以像 class 或者 id 选择器那样使用，当它们单独使用时，不会被编译到 CSS 文件中。</p> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token comment">// This ruleset won't be rendered on its own.</span>
+<span class="token selector">#context a<span class="token placeholder">%extreme</span> </span><span class="token punctuation">{</span>
+  <span class="token property">color</span><span class="token punctuation">:</span> blue<span class="token punctuation">;</span>
+  <span class="token property">font-weight</span><span class="token punctuation">:</span> bold<span class="token punctuation">;</span>
+  <span class="token property">font-size</span><span class="token punctuation">:</span> 2em<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.notice </span><span class="token punctuation">{</span>
+  <span class="token keyword">@extend</span> <span class="token placeholder selector">%extreme</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 编译后</span>
+<span class="token selector">#context a.notice </span><span class="token punctuation">{</span>
+  <span class="token property">color</span><span class="token punctuation">:</span> blue<span class="token punctuation">;</span>
+  <span class="token property">font-weight</span><span class="token punctuation">:</span> bold<span class="token punctuation">;</span>
+  <span class="token property">font-size</span><span class="token punctuation">:</span> 2em<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="在指令中延伸"><a href="#在指令中延伸" class="header-anchor">#</a> 在指令中延伸</h3> <p>在指令中使用 <code>@extend</code> 时（比如在 <code>@media</code> 中）有一些限制：Sass 不可以将 <code>@media</code> 层外的 CSS 规则延伸给指令层内的 CSS，这样会生成大量的无用代码。</p> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token comment">// 下面的例子是可行的：</span>
+<span class="token atrule"><span class="token rule">@media</span> print</span> <span class="token punctuation">{</span>
+  <span class="token selector">.error </span><span class="token punctuation">{</span>
+    <span class="token property">border</span><span class="token punctuation">:</span> 1px #f00<span class="token punctuation">;</span>
+    <span class="token property">background-color</span><span class="token punctuation">:</span> #fdd<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token selector">.seriousError </span><span class="token punctuation">{</span>
+    <span class="token keyword">@extend</span> .error<span class="token punctuation">;</span>
+    <span class="token property">border-width</span><span class="token punctuation">:</span> 3px<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 但不可以这样</span>
+<span class="token selector">.error </span><span class="token punctuation">{</span>
+  <span class="token property">border</span><span class="token punctuation">:</span> 1px #f00<span class="token punctuation">;</span>
+  <span class="token property">background-color</span><span class="token punctuation">:</span> #fdd<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token atrule"><span class="token rule">@media</span> print</span> <span class="token punctuation">{</span>
+  <span class="token selector">.seriousError </span><span class="token punctuation">{</span>
+    <span class="token comment">// INVALID EXTEND: .error is used outside of the &quot;@media print&quot; directive</span>
+    <span class="token keyword">@extend</span> .error<span class="token punctuation">;</span>
+    <span class="token property">border-width</span><span class="token punctuation">:</span> 3px<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="at-root"><a href="#at-root" class="header-anchor">#</a> @at-root</h2> <p><code>@at-root</code>的内联选择器嵌套，将不会让你的选择器发生任何的嵌套，直接移除了父选择器。</p> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token selector">.foo </span><span class="token punctuation">{</span>
+    <span class="token atrule"><span class="token rule">@at-root</span> .bar</span> <span class="token punctuation">{</span>
+        <span class="token property">color</span><span class="token punctuation">:</span> gray<span class="token punctuation">;</span>
+        <span class="token atrule"><span class="token rule">@at-root</span> <span class="token selector">button</span><span class="token punctuation">{</span>
+            <span class="token property">color</span><span class="token punctuation">:</span>red<span class="token punctuation">;</span>
+            <span class="token rule">@at-root</span> span</span> <span class="token punctuation">{</span>
+                <span class="token property">color</span><span class="token punctuation">:</span> orange<span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// 编译后</span>
+<span class="token selector">.bar </span><span class="token punctuation">{</span>
+  <span class="token property">color</span><span class="token punctuation">:</span> gray<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">button </span><span class="token punctuation">{</span>
+  <span class="token property">color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">span </span><span class="token punctuation">{</span>
+  <span class="token property">color</span><span class="token punctuation">:</span> orange<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="debug"><a href="#debug" class="header-anchor">#</a> @debug</h2> <p>@debug指令将SassScript表达式的值打印到标准错误输出流。它对于调试具有复杂SassScript的Sass文件非常有用。例如:</p> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token keyword">@debug</span> 10em <span class="token operator">+</span> 12em<span class="token punctuation">;</span>
+Line 1 <span class="token property">DEBUG</span><span class="token punctuation">:</span> 22em
+</code></pre></div><h2 id="warn"><a href="#warn" class="header-anchor">#</a> @warn</h2> <p>@warn指令将SassScript表达式的值打印到标准错误输出流。对于需要警告用户不使用或从轻微的mixin使用错误中恢复的库来说，它非常有用。</p> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token keyword">@mixin</span> <span class="token function">adjust-location</span><span class="token punctuation">(</span><span class="token variable">$x</span><span class="token punctuation">,</span> <span class="token variable">$y</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">@if</span> <span class="token function">unitless</span><span class="token punctuation">(</span><span class="token variable">$x</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">@warn</span> <span class="token string">&quot;Assuming #{$x} to be in pixels&quot;</span><span class="token punctuation">;</span>
+    <span class="token property"><span class="token variable">$x</span></span><span class="token punctuation">:</span> 1px <span class="token operator">*</span> <span class="token variable">$x</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">@if</span> <span class="token function">unitless</span><span class="token punctuation">(</span><span class="token variable">$y</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">@warn</span> <span class="token string">&quot;Assuming #{$y} to be in pixels&quot;</span><span class="token punctuation">;</span>
+    <span class="token property"><span class="token variable">$y</span></span><span class="token punctuation">:</span> 1px <span class="token operator">*</span> <span class="token variable">$y</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token property">position</span><span class="token punctuation">:</span> relative<span class="token punctuation">;</span> <span class="token property">left</span><span class="token punctuation">:</span> <span class="token variable">$x</span><span class="token punctuation">;</span> <span class="token property">top</span><span class="token punctuation">:</span> <span class="token variable">$y</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">@include</span> <span class="token function">adjust-location</span><span class="token punctuation">(</span>10px<span class="token punctuation">,</span> 20px<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 编译后</span>
+Declarations may only be used within style rules.
+  ╷
+10│   <span class="token property">position</span><span class="token punctuation">:</span> relative<span class="token punctuation">;</span> <span class="token property">left</span><span class="token punctuation">:</span> <span class="token variable">$x</span><span class="token punctuation">;</span> <span class="token property">top</span><span class="token punctuation">:</span> <span class="token variable">$y</span><span class="token punctuation">;</span>
+  │   ^^^^^^^^^^^^^^^^^^
+  ╵
+  stdin <span class="token property">10</span><span class="token punctuation">:</span>3  <span class="token function">adjust-location</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  stdin <span class="token property">13</span><span class="token punctuation">:</span>1  root stylesheet on line 10 at column 3
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/blog/guide/css-pretreatment/2.Sass数据类型.html" class="prev">
+        Sass 数据类型
+      </a></span> <span class="next"><a href="/blog/guide/css-pretreatment/4.Sass控制指令.html">
+        Sass 控制指令
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.66729703.js" defer></script><script src="/assets/js/2.751cbbdc.js" defer></script><script src="/assets/js/39.686f660f.js" defer></script>
+  </body>
+</html>

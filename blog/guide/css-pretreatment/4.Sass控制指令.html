@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Sass 控制指令 | 眼圈发黑</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    
+    <meta name="description" content="分享学习笔记的个人博客">
+    <link rel="preload" href="/assets/css/0.styles.8fbd8908.css" as="style"><link rel="preload" href="/assets/js/app.66729703.js" as="script"><link rel="preload" href="/assets/js/2.751cbbdc.js" as="script"><link rel="preload" href="/assets/js/40.a98543d3.js" as="script"><link rel="prefetch" href="/assets/js/10.5ef6b535.js"><link rel="prefetch" href="/assets/js/11.06b366a7.js"><link rel="prefetch" href="/assets/js/12.033941e8.js"><link rel="prefetch" href="/assets/js/13.7e3d5fc4.js"><link rel="prefetch" href="/assets/js/14.1d8d5c38.js"><link rel="prefetch" href="/assets/js/15.48ed59d4.js"><link rel="prefetch" href="/assets/js/16.f4a18cdc.js"><link rel="prefetch" href="/assets/js/17.9c042f92.js"><link rel="prefetch" href="/assets/js/18.12374071.js"><link rel="prefetch" href="/assets/js/19.36d25448.js"><link rel="prefetch" href="/assets/js/20.1d70349f.js"><link rel="prefetch" href="/assets/js/21.89175811.js"><link rel="prefetch" href="/assets/js/22.491bceba.js"><link rel="prefetch" href="/assets/js/23.7da121a7.js"><link rel="prefetch" href="/assets/js/24.39e54ebd.js"><link rel="prefetch" href="/assets/js/25.78212e68.js"><link rel="prefetch" href="/assets/js/26.4fe075a0.js"><link rel="prefetch" href="/assets/js/27.de488a7c.js"><link rel="prefetch" href="/assets/js/28.c0f198cf.js"><link rel="prefetch" href="/assets/js/29.d781ae97.js"><link rel="prefetch" href="/assets/js/3.ab58017d.js"><link rel="prefetch" href="/assets/js/30.41099b0a.js"><link rel="prefetch" href="/assets/js/31.a6e2d3d9.js"><link rel="prefetch" href="/assets/js/32.da604dce.js"><link rel="prefetch" href="/assets/js/33.ff76561f.js"><link rel="prefetch" href="/assets/js/34.947086dc.js"><link rel="prefetch" href="/assets/js/35.dd632927.js"><link rel="prefetch" href="/assets/js/36.ff97bfd4.js"><link rel="prefetch" href="/assets/js/37.d785f299.js"><link rel="prefetch" href="/assets/js/38.a539470c.js"><link rel="prefetch" href="/assets/js/39.686f660f.js"><link rel="prefetch" href="/assets/js/4.aa54df16.js"><link rel="prefetch" href="/assets/js/41.c992fd48.js"><link rel="prefetch" href="/assets/js/42.a9dc1a1f.js"><link rel="prefetch" href="/assets/js/5.18505f39.js"><link rel="prefetch" href="/assets/js/6.ef74fa2a.js"><link rel="prefetch" href="/assets/js/7.3f2d4e21.js"><link rel="prefetch" href="/assets/js/8.f3f008ab.js"><link rel="prefetch" href="/assets/js/9.b0dba02d.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.8fbd8908.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">眼圈发黑</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="advanced" class="dropdown-title"><span class="title">学习笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/guide/Git/1.Git的安装到添加到本地仓库.html" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/blog/guide/Terminal/1.Win10 Terminal 命令使用.html" class="nav-link">
+  Terminal
+</a></li><li class="dropdown-item"><h4>
+          CSS预处理器
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/guide/css-pretreatment/1.Sass基本运用.html" class="nav-link">
+  Sass
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="advanced" class="dropdown-title"><span class="title">高级</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/design-pattern/1.设计模式与开发实践-多态.html" class="nav-link">
+  设计模式
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/lfb0728" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="https://juejin.im/user/5d560a03518825053e0431a0/posts" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  掘金
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="advanced" class="dropdown-title"><span class="title">学习笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/guide/Git/1.Git的安装到添加到本地仓库.html" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/blog/guide/Terminal/1.Win10 Terminal 命令使用.html" class="nav-link">
+  Terminal
+</a></li><li class="dropdown-item"><h4>
+          CSS预处理器
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/guide/css-pretreatment/1.Sass基本运用.html" class="nav-link">
+  Sass
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="advanced" class="dropdown-title"><span class="title">高级</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/design-pattern/1.设计模式与开发实践-多态.html" class="nav-link">
+  设计模式
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/lfb0728" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="https://juejin.im/user/5d560a03518825053e0431a0/posts" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  掘金
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/blog/guide/css-pretreatment/1.Sass基本运用.html" class="sidebar-link">Sass</a></li><li><a href="/blog/guide/css-pretreatment/2.Sass数据类型.html" class="sidebar-link">Sass 数据类型</a></li><li><a href="/blog/guide/css-pretreatment/3.Sass@-Rules.html" class="sidebar-link">Sass @-Rules</a></li><li><a href="/blog/guide/css-pretreatment/4.Sass控制指令.html" class="active sidebar-link">Sass 控制指令</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/guide/css-pretreatment/4.Sass控制指令.html#if（条件判断）" class="sidebar-link">@if（条件判断）</a></li><li class="sidebar-sub-header"><a href="/blog/guide/css-pretreatment/4.Sass控制指令.html#for" class="sidebar-link">@for</a></li><li class="sidebar-sub-header"><a href="/blog/guide/css-pretreatment/4.Sass控制指令.html#each" class="sidebar-link">@each</a></li><li class="sidebar-sub-header"><a href="/blog/guide/css-pretreatment/4.Sass控制指令.html#while" class="sidebar-link">@ while</a></li></ul></li><li><a href="/blog/guide/css-pretreatment/5.Sass混合指令和函数指令.html" class="sidebar-link">混合指令和函数指令</a></li><li><a href="/blog/guide/css-pretreatment/6.Sass输出格式.html" class="sidebar-link">Sass 输出格式</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="sass-控制指令"><a href="#sass-控制指令" class="header-anchor">#</a> Sass 控制指令</h1> <p>SassScript 提供了一些基础的控制指令，比如在满足一定条件时引用样式，或者设定范围重复输出格式。控制指令是一种高级功能，日常编写过程中并不常用到，主要与混合指令 (mixin) 配合使用，尤其是用在 <a href="http://compass-style.org/" target="_blank" rel="noopener noreferrer">Compass<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> 等样式库中。</p> <h2 id="if（条件判断）"><a href="#if（条件判断）" class="header-anchor">#</a> @if（条件判断）</h2> <p>当@if后面的条件为真时，输出后面的代码块，与js中的if判断一样，也支持@else-if。</p> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token property"><span class="token variable">$type</span></span><span class="token punctuation">:</span> monster<span class="token punctuation">;</span>
+<span class="token selector">p </span><span class="token punctuation">{</span>
+  <span class="token keyword">@if</span> <span class="token selector"><span class="token variable">$type</span> == ocean </span><span class="token punctuation">{</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> blue<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span> <span class="token keyword">@else if</span> <span class="token selector"><span class="token variable">$type</span> == matador </span><span class="token punctuation">{</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span> <span class="token keyword">@else if</span> <span class="token selector"><span class="token variable">$type</span> == monster </span><span class="token punctuation">{</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> green<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span> <span class="token keyword">@else</span> <span class="token punctuation">{</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> black<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// 编译后</span>
+<span class="token selector">p </span><span class="token punctuation">{</span>
+  <span class="token property">color</span><span class="token punctuation">:</span> green<span class="token punctuation">;</span> 
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="for"><a href="#for" class="header-anchor">#</a> @for</h2> <p><code>@for</code> 指令可以在限制的范围内重复输出格式，每次按要求（变量的值）对输出结果做出变动。这个指令包含两种格式：<code>@for $var from &lt;start&gt; through &lt;end&gt;</code>，或者 <code>@for $var from &lt;start&gt; to &lt;end&gt;</code>，区别在于 <code>through</code> 与 <code>to</code> 的含义：<em>当使用 <code>through</code> 时，条件范围包含 <code>&lt;start&gt;</code> 与 <code>&lt;end&gt;</code> 的值，而使用 <code>to</code> 时条件范围只包含 <code>&lt;start&gt;</code> 的值不包含 <code>&lt;end&gt;</code> 的值</em>。另外，<code>$var</code> 可以是任何变量，比如 <code>$i</code>；<code>&lt;start&gt;</code> 和 <code>&lt;end&gt;</code> 必须是整数值。</p> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token keyword">@for</span> <span class="token variable">$i</span> <span class="token keyword">from</span> 1 <span class="token keyword">through</span> <span class="token selector">3 </span><span class="token punctuation">{</span>
+  <span class="token selector">.item-<span class="token variable">#{$i}</span> </span><span class="token punctuation">{</span> 
+    <span class="token property">width</span><span class="token punctuation">:</span> 2em <span class="token operator">*</span> <span class="token variable">$i</span><span class="token punctuation">;</span> 
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// 编译后</span>
+<span class="token selector">.item-1 </span><span class="token punctuation">{</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 2em<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.item-2 </span><span class="token punctuation">{</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 4em<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.item-3 </span><span class="token punctuation">{</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 6em<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="each"><a href="#each" class="header-anchor">#</a> @each</h2> <p><code>@each</code> 指令的格式是 <code>@each $var in &lt;list&gt;</code>, <code>$var</code> 可以是任何变量名，比如 <code>$length</code> 或者 <code>$name</code>，而 <code>&lt;list&gt;</code> 是一连串的值，也就是值列表。</p> <p><code>@each</code> 将变量 <code>$var</code> 作用于值列表中的每一个项目，然后输出结果，例如：</p> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token keyword">@each</span> <span class="token selector"><span class="token variable">$animal</span> in puma, sea-slug, egret, salamander </span><span class="token punctuation">{</span>
+  <span class="token selector">.<span class="token variable">#{$animal}</span>-icon </span><span class="token punctuation">{</span>
+    <span class="token property">background-image</span><span class="token punctuation">:</span> <span class="token url">url</span><span class="token punctuation">(</span><span class="token string">'/images/#{$animal}.png'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// 编译后</span>
+<span class="token selector">.puma-icon </span><span class="token punctuation">{</span>
+  <span class="token property">background-image</span><span class="token punctuation">:</span> <span class="token url">url</span><span class="token punctuation">(</span><span class="token string">&quot;/images/puma.png&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.sea-slug-icon </span><span class="token punctuation">{</span>
+  <span class="token property">background-image</span><span class="token punctuation">:</span> <span class="token url">url</span><span class="token punctuation">(</span><span class="token string">&quot;/images/sea-slug.png&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.egret-icon </span><span class="token punctuation">{</span>
+  <span class="token property">background-image</span><span class="token punctuation">:</span> <span class="token url">url</span><span class="token punctuation">(</span><span class="token string">&quot;/images/egret.png&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.salamander-icon </span><span class="token punctuation">{</span>
+  <span class="token property">background-image</span><span class="token punctuation">:</span> <span class="token url">url</span><span class="token punctuation">(</span><span class="token string">&quot;/images/salamander.png&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="多重赋值"><a href="#多重赋值" class="header-anchor">#</a> 多重赋值</h3> <p>@each指令也可以使用多个变量，如@each $var1， $var2，…在。如果是列表的列表，则子列表的每个元素都被分配给相应的变量。例如:</p> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token keyword">@each</span> <span class="token variable">$animal</span><span class="token punctuation">,</span> <span class="token variable">$color</span><span class="token punctuation">,</span> <span class="token variable">$cursor</span> in <span class="token punctuation">(</span>puma<span class="token punctuation">,</span> black<span class="token punctuation">,</span> default<span class="token punctuation">)</span><span class="token punctuation">,</span>
+                                  <span class="token punctuation">(</span>sea-slug<span class="token punctuation">,</span> blue<span class="token punctuation">,</span> pointer<span class="token punctuation">)</span><span class="token punctuation">,</span>
+                                  <span class="token punctuation">(</span>egret<span class="token punctuation">,</span> white<span class="token punctuation">,</span> move<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token selector">.<span class="token variable">#{$animal}</span>-icon </span><span class="token punctuation">{</span>
+    <span class="token property">background-image</span><span class="token punctuation">:</span> <span class="token url">url</span><span class="token punctuation">(</span><span class="token string">'/images/#{$animal}.png'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token property">border</span><span class="token punctuation">:</span> 2px solid <span class="token variable">$color</span><span class="token punctuation">;</span>
+    <span class="token property">cursor</span><span class="token punctuation">:</span> <span class="token variable">$cursor</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 编译后</span>
+<span class="token selector">.puma-icon </span><span class="token punctuation">{</span>
+  <span class="token property">background-image</span><span class="token punctuation">:</span> <span class="token url">url</span><span class="token punctuation">(</span><span class="token string">&quot;/images/puma.png&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">border</span><span class="token punctuation">:</span> 2px solid black<span class="token punctuation">;</span>
+  <span class="token property">cursor</span><span class="token punctuation">:</span> default<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.sea-slug-icon </span><span class="token punctuation">{</span>
+  <span class="token property">background-image</span><span class="token punctuation">:</span> <span class="token url">url</span><span class="token punctuation">(</span><span class="token string">&quot;/images/sea-slug.png&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">border</span><span class="token punctuation">:</span> 2px solid blue<span class="token punctuation">;</span>
+  <span class="token property">cursor</span><span class="token punctuation">:</span> pointer<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.egret-icon </span><span class="token punctuation">{</span>
+  <span class="token property">background-image</span><span class="token punctuation">:</span> <span class="token url">url</span><span class="token punctuation">(</span><span class="token string">&quot;/images/egret.png&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token property">border</span><span class="token punctuation">:</span> 2px solid white<span class="token punctuation">;</span>
+  <span class="token property">cursor</span><span class="token punctuation">:</span> move<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+
+<span class="token keyword">@each</span> <span class="token variable">$header</span><span class="token punctuation">,</span> <span class="token variable">$size</span> in <span class="token punctuation">(</span><span class="token property">h1</span><span class="token punctuation">:</span> 2em<span class="token punctuation">,</span> <span class="token property">h2</span><span class="token punctuation">:</span> 1.5em<span class="token punctuation">,</span> <span class="token property">h3</span><span class="token punctuation">:</span> 1.2em<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token selector"><span class="token variable">#{$header}</span> </span><span class="token punctuation">{</span>
+    <span class="token property">font-size</span><span class="token punctuation">:</span> <span class="token variable">$size</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// 编译后</span>
+<span class="token selector">h1 </span><span class="token punctuation">{</span>
+  <span class="token property">font-size</span><span class="token punctuation">:</span> 2em<span class="token punctuation">;</span> 
+<span class="token punctuation">}</span>
+<span class="token selector">h2 </span><span class="token punctuation">{</span>
+  <span class="token property">font-size</span><span class="token punctuation">:</span> 1.5em<span class="token punctuation">;</span> 
+<span class="token punctuation">}</span>
+<span class="token selector">h3 </span><span class="token punctuation">{</span>
+  <span class="token property">font-size</span><span class="token punctuation">:</span> 1.2em<span class="token punctuation">;</span> 
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="while"><a href="#while" class="header-anchor">#</a> @ while</h2> <p><code>@while</code> 指令重复输出格式直到表达式返回结果为 <code>false</code>。这样可以实现比 <code>@for</code> 更复杂的循环，只是很少会用到。例如：</p> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token property"><span class="token variable">$i</span></span><span class="token punctuation">:</span> 6<span class="token punctuation">;</span>
+<span class="token keyword">@while</span> <span class="token selector"><span class="token variable">$i</span> &gt; 0 </span><span class="token punctuation">{</span>
+  <span class="token selector">.item-<span class="token variable">#{$i}</span> </span><span class="token punctuation">{</span> <span class="token property">width</span><span class="token punctuation">:</span> 2em <span class="token operator">*</span> <span class="token variable">$i</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+  <span class="token property"><span class="token variable">$i</span></span><span class="token punctuation">:</span> <span class="token variable">$i</span> <span class="token operator">-</span> 2<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 编译后</span>
+<span class="token selector">.item-6 </span><span class="token punctuation">{</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 12em<span class="token punctuation">;</span> 
+<span class="token punctuation">}</span>
+
+<span class="token selector">.item-4 </span><span class="token punctuation">{</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 8em<span class="token punctuation">;</span> 
+<span class="token punctuation">}</span>
+
+<span class="token selector">.item-2 </span><span class="token punctuation">{</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 4em<span class="token punctuation">;</span> 
+<span class="token punctuation">}</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/blog/guide/css-pretreatment/3.Sass@-Rules.html" class="prev">
+        Sass @-Rules
+      </a></span> <span class="next"><a href="/blog/guide/css-pretreatment/5.Sass混合指令和函数指令.html">
+        混合指令和函数指令
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.66729703.js" defer></script><script src="/assets/js/2.751cbbdc.js" defer></script><script src="/assets/js/40.a98543d3.js" defer></script>
+  </body>
+</html>

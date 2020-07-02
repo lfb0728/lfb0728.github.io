@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>混合指令和函数指令 | 眼圈发黑</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    
+    <meta name="description" content="分享学习笔记的个人博客">
+    <link rel="preload" href="/assets/css/0.styles.8fbd8908.css" as="style"><link rel="preload" href="/assets/js/app.66729703.js" as="script"><link rel="preload" href="/assets/js/2.751cbbdc.js" as="script"><link rel="preload" href="/assets/js/41.c992fd48.js" as="script"><link rel="prefetch" href="/assets/js/10.5ef6b535.js"><link rel="prefetch" href="/assets/js/11.06b366a7.js"><link rel="prefetch" href="/assets/js/12.033941e8.js"><link rel="prefetch" href="/assets/js/13.7e3d5fc4.js"><link rel="prefetch" href="/assets/js/14.1d8d5c38.js"><link rel="prefetch" href="/assets/js/15.48ed59d4.js"><link rel="prefetch" href="/assets/js/16.f4a18cdc.js"><link rel="prefetch" href="/assets/js/17.9c042f92.js"><link rel="prefetch" href="/assets/js/18.12374071.js"><link rel="prefetch" href="/assets/js/19.36d25448.js"><link rel="prefetch" href="/assets/js/20.1d70349f.js"><link rel="prefetch" href="/assets/js/21.89175811.js"><link rel="prefetch" href="/assets/js/22.491bceba.js"><link rel="prefetch" href="/assets/js/23.7da121a7.js"><link rel="prefetch" href="/assets/js/24.39e54ebd.js"><link rel="prefetch" href="/assets/js/25.78212e68.js"><link rel="prefetch" href="/assets/js/26.4fe075a0.js"><link rel="prefetch" href="/assets/js/27.de488a7c.js"><link rel="prefetch" href="/assets/js/28.c0f198cf.js"><link rel="prefetch" href="/assets/js/29.d781ae97.js"><link rel="prefetch" href="/assets/js/3.ab58017d.js"><link rel="prefetch" href="/assets/js/30.41099b0a.js"><link rel="prefetch" href="/assets/js/31.a6e2d3d9.js"><link rel="prefetch" href="/assets/js/32.da604dce.js"><link rel="prefetch" href="/assets/js/33.ff76561f.js"><link rel="prefetch" href="/assets/js/34.947086dc.js"><link rel="prefetch" href="/assets/js/35.dd632927.js"><link rel="prefetch" href="/assets/js/36.ff97bfd4.js"><link rel="prefetch" href="/assets/js/37.d785f299.js"><link rel="prefetch" href="/assets/js/38.a539470c.js"><link rel="prefetch" href="/assets/js/39.686f660f.js"><link rel="prefetch" href="/assets/js/4.aa54df16.js"><link rel="prefetch" href="/assets/js/40.a98543d3.js"><link rel="prefetch" href="/assets/js/42.a9dc1a1f.js"><link rel="prefetch" href="/assets/js/5.18505f39.js"><link rel="prefetch" href="/assets/js/6.ef74fa2a.js"><link rel="prefetch" href="/assets/js/7.3f2d4e21.js"><link rel="prefetch" href="/assets/js/8.f3f008ab.js"><link rel="prefetch" href="/assets/js/9.b0dba02d.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.8fbd8908.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">眼圈发黑</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="advanced" class="dropdown-title"><span class="title">学习笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/guide/Git/1.Git的安装到添加到本地仓库.html" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/blog/guide/Terminal/1.Win10 Terminal 命令使用.html" class="nav-link">
+  Terminal
+</a></li><li class="dropdown-item"><h4>
+          CSS预处理器
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/guide/css-pretreatment/1.Sass基本运用.html" class="nav-link">
+  Sass
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="advanced" class="dropdown-title"><span class="title">高级</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/design-pattern/1.设计模式与开发实践-多态.html" class="nav-link">
+  设计模式
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/lfb0728" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="https://juejin.im/user/5d560a03518825053e0431a0/posts" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  掘金
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="advanced" class="dropdown-title"><span class="title">学习笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/guide/Git/1.Git的安装到添加到本地仓库.html" class="nav-link">
+  Git
+</a></li><li class="dropdown-item"><!----> <a href="/blog/guide/Terminal/1.Win10 Terminal 命令使用.html" class="nav-link">
+  Terminal
+</a></li><li class="dropdown-item"><h4>
+          CSS预处理器
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/blog/guide/css-pretreatment/1.Sass基本运用.html" class="nav-link">
+  Sass
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="advanced" class="dropdown-title"><span class="title">高级</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/design-pattern/1.设计模式与开发实践-多态.html" class="nav-link">
+  设计模式
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/lfb0728" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="https://juejin.im/user/5d560a03518825053e0431a0/posts" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  掘金
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/blog/guide/css-pretreatment/1.Sass基本运用.html" class="sidebar-link">Sass</a></li><li><a href="/blog/guide/css-pretreatment/2.Sass数据类型.html" class="sidebar-link">Sass 数据类型</a></li><li><a href="/blog/guide/css-pretreatment/3.Sass@-Rules.html" class="sidebar-link">Sass @-Rules</a></li><li><a href="/blog/guide/css-pretreatment/4.Sass控制指令.html" class="sidebar-link">Sass 控制指令</a></li><li><a href="/blog/guide/css-pretreatment/5.Sass混合指令和函数指令.html" class="active sidebar-link">混合指令和函数指令</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/guide/css-pretreatment/5.Sass混合指令和函数指令.html#定义混合指令-mixin" class="sidebar-link">定义混合指令 @mixin</a></li><li class="sidebar-sub-header"><a href="/blog/guide/css-pretreatment/5.Sass混合指令和函数指令.html#引用混合样式-include" class="sidebar-link">引用混合样式 @include</a></li><li class="sidebar-sub-header"><a href="/blog/guide/css-pretreatment/5.Sass混合指令和函数指令.html#参数" class="sidebar-link">参数</a></li><li class="sidebar-sub-header"><a href="/blog/guide/css-pretreatment/5.Sass混合指令和函数指令.html#向混合样式中导入内容" class="sidebar-link">向混合样式中导入内容</a></li><li class="sidebar-sub-header"><a href="/blog/guide/css-pretreatment/5.Sass混合指令和函数指令.html#函数指令" class="sidebar-link">函数指令</a></li></ul></li><li><a href="/blog/guide/css-pretreatment/6.Sass输出格式.html" class="sidebar-link">Sass 输出格式</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="混合指令和函数指令"><a href="#混合指令和函数指令" class="header-anchor">#</a> 混合指令和函数指令</h1> <p>混合指令（Mixin）用于定义可重复使用的样式，避免了使用无语意的 class，比如 <code>.float-left</code>。混合指令可以包含所有的 CSS 规则，绝大部分 Sass 规则，甚至通过参数功能引入变量，输出多样化的样式。</p> <h2 id="定义混合指令-mixin"><a href="#定义混合指令-mixin" class="header-anchor">#</a> 定义混合指令 @mixin</h2> <p>混合指令的用法是在 <code>@mixin</code> 后添加名称与样式，比如名为 <code>large-text</code> 的混合通过下面的代码定义：</p> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token keyword">@mixin</span> <span class="token selector">large-text </span><span class="token punctuation">{</span>
+  <span class="token selector">font: </span><span class="token punctuation">{</span>
+    <span class="token property">family</span><span class="token punctuation">:</span> Arial<span class="token punctuation">;</span>
+    <span class="token property">size</span><span class="token punctuation">:</span> 20px<span class="token punctuation">;</span>
+    <span class="token property">weight</span><span class="token punctuation">:</span> bold<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token property">color</span><span class="token punctuation">:</span> #ff0000<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>混合可以包含选择器和属性，也可以用 <code>&amp;</code> 引用父选择器：</p> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token keyword">@mixin</span> <span class="token selector">clearfix </span><span class="token punctuation">{</span>
+  <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
+  <span class="token selector"><span class="token parent important">&amp;</span>:after </span><span class="token punctuation">{</span>
+    <span class="token property">content</span><span class="token punctuation">:</span> <span class="token string">&quot;.&quot;</span><span class="token punctuation">;</span>
+    <span class="token property">display</span><span class="token punctuation">:</span> block<span class="token punctuation">;</span>
+    <span class="token property">height</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+    <span class="token property">clear</span><span class="token punctuation">:</span> both<span class="token punctuation">;</span>
+    <span class="token property">visibility</span><span class="token punctuation">:</span> hidden<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token selector">* html <span class="token parent important">&amp;</span> </span><span class="token punctuation">{</span> <span class="token property">height</span><span class="token punctuation">:</span> 1px <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token selector">div </span><span class="token punctuation">{</span>
+  <span class="token keyword">@include</span> clearfix
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 编译后</span>
+<span class="token selector">div </span><span class="token punctuation">{</span>
+  <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">div:after </span><span class="token punctuation">{</span>
+  <span class="token property">content</span><span class="token punctuation">:</span> <span class="token string">&quot;.&quot;</span><span class="token punctuation">;</span>
+  <span class="token property">display</span><span class="token punctuation">:</span> block<span class="token punctuation">;</span>
+  <span class="token property">height</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+  <span class="token property">clear</span><span class="token punctuation">:</span> both<span class="token punctuation">;</span>
+  <span class="token property">visibility</span><span class="token punctuation">:</span> hidden<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">* html div </span><span class="token punctuation">{</span>
+  <span class="token property">height</span><span class="token punctuation">:</span> 1px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="引用混合样式-include"><a href="#引用混合样式-include" class="header-anchor">#</a> 引用混合样式 @include</h2> <p>使用 <code>@include</code> 指令引用混合样式，格式是在其后添加混合名称，以及需要的参数（可选）：</p> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token keyword">@mixin</span> <span class="token function">hover-color</span><span class="token punctuation">(</span><span class="token variable">$color</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token selector"><span class="token parent important">&amp;</span>::hover </span><span class="token punctuation">{</span>
+        <span class="token property">color</span><span class="token punctuation">:</span> <span class="token variable">$color</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// 引用</span>
+<span class="token selector">a </span><span class="token punctuation">{</span>
+    <span class="token keyword">@include</span> <span class="token function">hover-color</span><span class="token punctuation">(</span>red<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 编译后</span>
+<span class="token selector">a::hover </span><span class="token punctuation">{</span>
+  <span class="token property">color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>也可以在最外层引用混合样式，不会直接定义属性，也不可以使用父选择器。</p> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token keyword">@mixin</span> <span class="token selector">silly-links </span><span class="token punctuation">{</span>
+  <span class="token selector">a </span><span class="token punctuation">{</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> blue<span class="token punctuation">;</span>
+    <span class="token property">background-color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">@include</span> silly-links<span class="token punctuation">;</span>
+<span class="token comment">// 编译后</span>
+<span class="token selector">a </span><span class="token punctuation">{</span>
+  <span class="token property">color</span><span class="token punctuation">:</span> blue<span class="token punctuation">;</span>
+  <span class="token property">background-color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="参数"><a href="#参数" class="header-anchor">#</a> 参数</h2> <p>参数用于给混合指令中的样式设定变量，并且赋值使用。在定义混合指令的时候，按照变量的格式，通过逗号分隔，将参数写进圆括号里。引用指令时，按照参数的顺序，再将所赋的值对应写进括号：</p> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token keyword">@mixin</span> <span class="token function">sexy-border</span><span class="token punctuation">(</span><span class="token variable">$color</span><span class="token punctuation">,</span> <span class="token variable">$width</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token selector">border: </span><span class="token punctuation">{</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> <span class="token variable">$color</span><span class="token punctuation">;</span>
+    <span class="token property">width</span><span class="token punctuation">:</span> <span class="token variable">$width</span><span class="token punctuation">;</span>
+    <span class="token property">style</span><span class="token punctuation">:</span> dashed<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token selector">p </span><span class="token punctuation">{</span> <span class="token keyword">@include</span> <span class="token function">sexy-border</span><span class="token punctuation">(</span>blue<span class="token punctuation">,</span> 100px<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+<span class="token comment">// 编译后</span>
+<span class="token selector">p </span><span class="token punctuation">{</span>
+  <span class="token property">border-color</span><span class="token punctuation">:</span> blue<span class="token punctuation">;</span>
+  <span class="token property">border-width</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+  <span class="token property">border-style</span><span class="token punctuation">:</span> dashed<span class="token punctuation">;</span> 
+<span class="token punctuation">}</span>
+</code></pre></div><p>混合指令也可以使用给变量赋值的方法给参数设定默认值，然后，当这个指令被引用的时候，如果没有给参数赋值，则自动使用默认值：</p> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token keyword">@mixin</span> <span class="token function">sexy-border</span><span class="token punctuation">(</span><span class="token variable">$color</span><span class="token punctuation">,</span> <span class="token property"><span class="token variable">$width</span></span><span class="token punctuation">:</span> 100px<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token selector">border: </span><span class="token punctuation">{</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> <span class="token variable">$color</span><span class="token punctuation">;</span>
+    <span class="token property">width</span><span class="token punctuation">:</span> <span class="token variable">$width</span><span class="token punctuation">;</span>
+    <span class="token property">style</span><span class="token punctuation">:</span> dashed<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token selector">p </span><span class="token punctuation">{</span> <span class="token keyword">@include</span> <span class="token function">sexy-border</span><span class="token punctuation">(</span>blue<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+<span class="token selector">h1 </span><span class="token punctuation">{</span> <span class="token keyword">@include</span> <span class="token function">sexy-border</span><span class="token punctuation">(</span>blue<span class="token punctuation">,</span> 200px<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+
+<span class="token comment">// 编译后</span>
+<span class="token selector">p </span><span class="token punctuation">{</span>
+  <span class="token property">border-color</span><span class="token punctuation">:</span> blue<span class="token punctuation">;</span>
+  <span class="token property">border-width</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+  <span class="token property">border-style</span><span class="token punctuation">:</span> dashed<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">h1 </span><span class="token punctuation">{</span>
+  <span class="token property">border-color</span><span class="token punctuation">:</span> blue<span class="token punctuation">;</span>
+  <span class="token property">border-width</span><span class="token punctuation">:</span> 200px<span class="token punctuation">;</span>
+  <span class="token property">border-style</span><span class="token punctuation">:</span> dashed<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>混合指令也可以使用关键词参数，上面的例子也可以写成：</p> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token selector">p </span><span class="token punctuation">{</span> <span class="token keyword">@include</span> <span class="token function">sexy-border</span><span class="token punctuation">(</span><span class="token property"><span class="token variable">$color</span></span><span class="token punctuation">:</span> blue<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+<span class="token selector">h1 </span><span class="token punctuation">{</span> <span class="token keyword">@include</span> <span class="token function">sexy-border</span><span class="token punctuation">(</span><span class="token property"><span class="token variable">$color</span></span><span class="token punctuation">:</span> blue<span class="token punctuation">,</span> <span class="token property"><span class="token variable">$width</span></span><span class="token punctuation">:</span> 200px<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+</code></pre></div><p>虽然不够简明，但是阅读起来会更方便。关键词参数给函数提供了更灵活的接口，以及容易调用的参数。关键词参数可以打乱顺序使用，如果使用默认值也可以省缺，另外，参数名被视为变量名，下划线、短横线可以互换使用。</p> <h3 id="参数变量"><a href="#参数变量" class="header-anchor">#</a> 参数变量</h3> <p>有时，不能确定混合指令需要使用多少个参数，比如一个关于 <code>box-shadow</code> 的混合指令不能确定有多少个 'shadow' 会被用到。这时，可以使用参数变量 <code>…</code> 声明（写在参数的最后方）告诉 Sass 将这些参数视为值列表处理：</p> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token keyword">@mixin</span> <span class="token function">box-shadow</span><span class="token punctuation">(</span><span class="token variable">$shadows</span>...<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token property">-moz-box-shadow</span><span class="token punctuation">:</span> <span class="token variable">$shadows</span><span class="token punctuation">;</span>
+  <span class="token property">-webkit-box-shadow</span><span class="token punctuation">:</span> <span class="token variable">$shadows</span><span class="token punctuation">;</span>
+  <span class="token property">box-shadow</span><span class="token punctuation">:</span> <span class="token variable">$shadows</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.shadows </span><span class="token punctuation">{</span>
+  <span class="token keyword">@include</span> <span class="token function">box-shadow</span><span class="token punctuation">(</span>0px 4px 5px #666<span class="token punctuation">,</span> 2px 6px 10px #999<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// 也可以这样引用</span>
+<span class="token property"><span class="token variable">$values</span></span><span class="token punctuation">:</span> 0px 4px 5px #666<span class="token punctuation">,</span> 2px 6px 10px #999<span class="token punctuation">;</span>
+<span class="token selector">.shadows </span><span class="token punctuation">{</span>
+  <span class="token keyword">@include</span> <span class="token function">box-shadow</span><span class="token punctuation">(</span><span class="token variable">$values</span>...<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// 编译后</span>
+<span class="token selector">.shadows </span><span class="token punctuation">{</span>
+  <span class="token property">-moz-box-shadow</span><span class="token punctuation">:</span> 0px 4px 5px #666<span class="token punctuation">,</span> 2px 6px 10px #999<span class="token punctuation">;</span>
+  <span class="token property">-webkit-box-shadow</span><span class="token punctuation">:</span> 0px 4px 5px #666<span class="token punctuation">,</span> 2px 6px 10px #999<span class="token punctuation">;</span>
+  <span class="token property">box-shadow</span><span class="token punctuation">:</span> 0px 4px 5px #666<span class="token punctuation">,</span> 2px 6px 10px #999<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="向混合样式中导入内容"><a href="#向混合样式中导入内容" class="header-anchor">#</a> 向混合样式中导入内容</h2> <p>在引用混合样式的时候，可以先将一段代码导入到混合指令中，然后再输出混合样式，额外导入的部分将出现在 <code>@content</code> 标志的地方：</p> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token keyword">@mixin</span> <span class="token selector">apply-to-ie6-only </span><span class="token punctuation">{</span>
+  <span class="token selector">* html </span><span class="token punctuation">{</span>
+    <span class="token keyword">@content</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">@include</span> <span class="token selector">apply-to-ie6-only </span><span class="token punctuation">{</span>
+  <span class="token selector">#logo </span><span class="token punctuation">{</span>
+    <span class="token property">background-image</span><span class="token punctuation">:</span> <span class="token url">url</span><span class="token punctuation">(</span>/logo.gif<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// 编译后</span>
+<span class="token selector">* html #logo </span><span class="token punctuation">{</span>
+  <span class="token property">background-image</span><span class="token punctuation">:</span> <span class="token url">url</span><span class="token punctuation">(</span>/logo.gif<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="函数指令"><a href="#函数指令" class="header-anchor">#</a> 函数指令</h2> <p>Sass 支持自定义函数，并能在任何属性值或 Sass script 中使用：</p> <div class="language-scss extra-class"><pre class="language-scss"><code><span class="token property"><span class="token variable">$grid-width</span></span><span class="token punctuation">:</span> 40px<span class="token punctuation">;</span>
+<span class="token property"><span class="token variable">$gutter-width</span></span><span class="token punctuation">:</span> 10px<span class="token punctuation">;</span>
+
+<span class="token keyword">@function</span> <span class="token function">grid-width</span><span class="token punctuation">(</span><span class="token variable">$n</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">@return</span> <span class="token variable">$n</span> <span class="token operator">*</span> <span class="token variable">$grid-width</span> <span class="token operator">+</span> <span class="token punctuation">(</span><span class="token variable">$n</span> <span class="token operator">-</span> 1<span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token variable">$gutter-width</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">#sidebar </span><span class="token punctuation">{</span> <span class="token property">width</span><span class="token punctuation">:</span> <span class="token function">grid-width</span><span class="token punctuation">(</span>5<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+<span class="token selector">#sidebar </span><span class="token punctuation">{</span> <span class="token property">width</span><span class="token punctuation">:</span> <span class="token function">grid-width</span><span class="token punctuation">(</span><span class="token property"><span class="token variable">$n</span></span><span class="token punctuation">:</span> 5<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+<span class="token comment">// 编译后</span>
+<span class="token selector">#sidebar </span><span class="token punctuation">{</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 240px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>与 mixin 相同，也可以传递若干个全局变量给函数作为参数。一个函数可以含有多条语句，需要调用 <code>@return</code> 输出结果。</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/blog/guide/css-pretreatment/4.Sass控制指令.html" class="prev">
+        Sass 控制指令
+      </a></span> <span class="next"><a href="/blog/guide/css-pretreatment/6.Sass输出格式.html">
+        Sass 输出格式
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.66729703.js" defer></script><script src="/assets/js/2.751cbbdc.js" defer></script><script src="/assets/js/41.c992fd48.js" defer></script>
+  </body>
+</html>
